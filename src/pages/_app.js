@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
       theme={{
       token: {
         colorPrimary: '#15762e',
+
       },
     }}>
       <Header />
