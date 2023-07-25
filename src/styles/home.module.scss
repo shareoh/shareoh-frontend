@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'mediaqueries';
+
+.primary_bg{
+background-color: $color-primary;
+@include mobile{
+    background-color: red;
+}
+}
+.bg_light{
+
+}
+.hero_area{
+
+}
+.navbar_main_hold{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_logo{
+}
