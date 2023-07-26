@@ -1,44 +1,94 @@
-@import 'variables';
-@import 'mediaqueries';
+@import "variables";
+@import "mediaqueries";
 
+.shr_container {
+  max-width: 1400px;
+  padding: 0 120px;
 
-.shr_container{
-    max-width: 1400px;
-    padding: 0 120px;
+  @include mobile {
+    padding: 0 15px;
+  }
+}
+.primary_bg {
+  background-color: $color-primary;
+  @include mobile {
+    // background-color: red;
+  }
+}
+.bg_light {
+  background-color: $bg-light;
+}
+.text_white {
+  color: $color-white;
+}
+.text_dark {
+  color: $color-primary !important;
+}
+.section_lr_holder {
+  display: flex;
+  flex: 2;
+  align-items: center;
+}
+.section_lr_left {
+  flex: 1;
+}
+.section_lr_right {
+  flex: 1;
+}
 
-    @include mobile{
-        padding: 0 15px;
-    }
+// Navbar Styles
+.navbar_main_hold {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 240px);
+  background-color: $color-primary;
 }
-.primary_bg{
-background-color: $color-primary;
-@include mobile{
-    background-color: red;
+.nav_links_holder {
+  display: flex;
+  align-items: center;
 }
+.nav_link {
+  color: white;
+  margin: 0 10px;
 }
-.bg_light{
+.nav_btn {
+  margin-left: 20px;
+}
+// Navbar Styles End
 
+// Footer Styles
+.footer_main_hold {
+  display: flex;
+  flex: 5;
+  padding-top: 80px;
 }
-.hero_area{
+.footer_logo_box {
+  flex: 2;
+}
+.footer_links_box {
+  flex: 1;
+}
+.footer_link_head{
+    margin-bottom: 10px;
+}
+.footer_copyright{
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid $color-primary;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+// Footer Styles End
 
+.hero_image {
+  width: 100%;
+  height: auto;
 }
-.navbar_main_hold{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav_logo{
-}
-.nav_links_holder{
-    display: flex;
-    align-items: center;
-}
-.nav_link{
-color: white;
-margin:0 10px;
-}
-.nav_btn{
-    margin-left: 20px;
+.hero_section {
+  height: 700px;
 }
