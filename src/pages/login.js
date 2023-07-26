@@ -11,7 +11,7 @@ export default function Login() {
       </Head>
       <div className={`${styles.primary_bg}`}>
         <div className={`${styles.shr_container} ${styles.section_lr_holder} ${styles.hero_section}`}>
-        <p className={styles.text_white}>Login Page</p>
+        <p className={styles.text_white}>Voila! Login Page </p>
       </div>
       </div>
     </>
