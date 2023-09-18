@@ -11,7 +11,9 @@ export default function App({ Component, pageProps }) {
         colorPrimary: '#15762e',
         fontSize:18,
         fontSizeHeading1:68,
-        fontSizeHeading2:48	
+        fontSizeHeading2:48,	
+        fontSizeHeading3:32,	
+        fontSizeHeading4:24	
       },
     }}>
       <Head>
