@@ -4,6 +4,7 @@
 .shr_container {
   max-width: 1400px;
   padding: 0 120px;
+  margin: auto;
 
   @include mobile {
     padding: 0 15px;
@@ -17,6 +18,9 @@
 }
 .bg_light {
   background-color: $bg-light;
+}
+.bg_white {
+  background-color: white;
 }
 .text_white {
   color: $color-white;
@@ -35,6 +39,15 @@
 .section_lr_right {
   flex: 1;
 }
+.section_heading {
+  text-align: center;
+  margin: 0 0 50px 0 !important;
+  font-weight: bolder;
+}
+.section_padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
 // Navbar Styles
 .navbar_main_hold {
@@ -45,8 +58,11 @@
   align-items: center;
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   width: calc(100% - 240px);
   background-color: $color-primary;
+
 }
 .nav_links_holder {
   display: flex;
@@ -73,15 +89,15 @@
 .footer_links_box {
   flex: 1;
 }
-.footer_link_head{
-    margin-bottom: 10px;
+.footer_link_head {
+  margin-bottom: 10px;
 }
-.footer_copyright{
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid $color-primary;
-    margin-top: 60px;
-    padding-bottom: 40px;
+.footer_copyright {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid $color-primary;
+  margin-top: 60px;
+  padding-bottom: 40px;
 }
 // Footer Styles End
 
@@ -92,3 +108,23 @@
 .hero_section {
   height: 700px;
 }
+
+//why share oh section
+.why_shr_cards_holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.why_shr_card {
+  flex: 0 0 20%;
+  border-radius: 16px;
+  padding: 2% 2%;
+  margin-bottom: 2%;
+  background-color: #fff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+.why_shr_card_img {
+  width: 175px;
+}
+
+//why share oh section end
