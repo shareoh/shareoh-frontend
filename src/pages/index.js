@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Typography } from "antd";
+import { Typography, Button } from "antd";
 import styles from "@/styles/home.module.scss";
 import introImg from "../../public/img/hero-img.svg";
 import why_shr_card_img from "../../public/img/home/why_shr_card.svg";
@@ -77,6 +77,78 @@ export default function Home() {
               <WhyShrCard heading="Friendly for wallet" description="Save by borrowing, make money by lending your things to other Sharelians." />
             </div>
 
+          </div>
+        </div>
+        <div
+          className={`${styles.bg_white}`}
+        >
+          <div
+            className={`${styles.shr_container} ${styles.section_padding_b} ${styles.shr_leftright_section}`}
+          >
+            <div
+              className={`${styles.lr_sec_leftpart}`}
+            >
+              <Title
+                level={2}
+                className={`${styles.text_dark}`}
+              >
+                Become a Sharer
+              </Title>
+              <Text level={4} className={`${styles.text_dark}`}>
+                Share all the great things you have at home! Upload your things, it is free - a treat for your wallet, for the environment and for the Sharelians.
+                <br/>
+                Your belongings are safe with us: all objects are automatically insured by Zurich insurance company.
+              </Text>
+              <div>
+                <Button type="primary" size="large" className={styles.mt_40}>Read More</Button>
+              </div>
+            </div>
+            <div className={`${styles.lr_sec_rightpart}`}>
+              <Image
+                className={`${styles.hero_image}`}
+                src={introImg}
+                alt="Share OH intro"
+                width={570}
+                height={333}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className={`${styles.bg_white}`}
+        >
+          <div
+            className={`${styles.shr_container} ${styles.section_padding_b} ${styles.shr_leftright_section}`} style={{flexDirection:"row-reverse"}}
+          >
+            <div
+              className={`${styles.lr_sec_leftpart}`}
+            >
+              <Title
+                level={2}
+                className={`${styles.text_dark}`}
+              >
+                Become a User
+              </Title>
+              <Text level={4} className={`${styles.text_dark}`}>
+              Use all the great things you have at home! Upload your things, it is free - a treat for your wallet, for the environment and for the Sharelians.
+                <br/>
+                Your belongings are safe with us: all objects are automatically insured by Zurich insurance company.
+              </Text>
+              <div>
+                <Button type="primary" size="large" className={styles.mt_40}>Read More</Button>
+              </div>
+            </div>
+            <div className={`${styles.lr_sec_rightpart}`}>
+              <Image
+                className={`${styles.hero_image}`}
+                src={introImg}
+                alt="Share OH intro"
+                width={570}
+                height={333}
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

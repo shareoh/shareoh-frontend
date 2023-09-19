@@ -48,7 +48,15 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
+.section_padding_t {
+  padding-top: 80px;
+}
+.section_padding_b {
+  padding-bottom: 80px;
+}
+.mt_40 {
+  margin-top: 40px;
+}
 // Navbar Styles
 .navbar_main_hold {
   padding-top: 20px;
@@ -62,7 +70,6 @@
   left: 0;
   width: calc(100% - 240px);
   background-color: $color-primary;
-
 }
 .nav_links_holder {
   display: flex;
@@ -128,3 +135,22 @@
 }
 
 //why share oh section end
+
+//shr leftright section
+.shr_leftright_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  flex: 2;
+}
+.lr_sec_rightpart,
+.lr_sec_leftpart {
+  flex: 1;
+}
+
+//shr leftright section end
+
+.ant-btn {
+  box-shadow: none !important;
+}
