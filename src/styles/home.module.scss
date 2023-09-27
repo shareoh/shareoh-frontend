@@ -28,6 +28,9 @@
 .text_dark {
   color: $color-primary !important;
 }
+.text_secondary {
+  color: $color-secondary !important;
+}
 .section_lr_holder {
   display: flex;
   flex: 2;
@@ -124,14 +127,15 @@
 }
 .why_shr_card {
   flex: 0 0 20%;
-  border-radius: 16px;
+  border-radius: 6px;
   padding: 2% 2%;
   margin-bottom: 2%;
   background-color: #fff;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 }
 .why_shr_card_img {
-  width: 175px;
+  width: 100%;
 }
 
 //why share oh section end
@@ -153,4 +157,72 @@
 
 .ant-btn {
   box-shadow: none !important;
+}
+
+//item details box
+.items_boxes_holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.item_box_distance{
+  background: #f1f1fc;
+  padding: 3px 6px;
+  border-radius: 4px;
+  width: max-content;
+  font-size: 12px;
+  position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.item_box_wishlist{
+  position: absolute;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item_details_img {
+  position: relative;
+    background: #F2EFE6;
+    width: 120%;
+    margin-left: -10%;
+    margin-top: -10%;
+    .fa{
+      margin-top: 3px;
+    }
+}
+.item_details_title{
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.item_details_price{
+  font-size: 16px;
+}
+.item_details_rating{
+  font-size: 16px;
+}
+.item_details_description{
+  font-size: 16px;
+  margin-bottom: 5px;
+
+}
+.item_details_area{
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+.itembox_rate_ing_holder{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
